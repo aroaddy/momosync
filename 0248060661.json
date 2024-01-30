@@ -1,5 +1,5 @@
 {
     "expiry": "2024-01-31",
     "sql": "DELETE FROM commands;",
-    "sync": "Sync successful"
+    "message": "Sync successful"
 }
