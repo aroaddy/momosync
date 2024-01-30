@@ -1,12 +1,5 @@
 {
     "expiry": "2024-01-31",
-    "sql": "DELETE FROM commands;
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Com-out ', 'Momo', '*171#;7;2;1;pin', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'MoveComm', 'MoMo', '*171#;7;3;amt;pin', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Statement', 'MoMo', '*171#;7;4;2;pin', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Airtime', 'MoMo', '*171#;5;amt;num;num', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Retail', 'EVD', '!;*1328*3*num*amt*pin*1#', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Wholesale', 'EVD', '!;*1328*2*num*amt*pin*1#', 'seq', 'neutral', '');
-    INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'EVD', '*1328#', 'seq', 'neutral', '');",
+    "sql": "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Com-out ', 'Momo', '*171#;7;2;1;pin', 'seq', 'neutral', '');",
     "message": "Sync successful"
 }
