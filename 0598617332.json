@@ -1,0 +1,16 @@
+{
+    "expiry": "2024-02-29",
+    "sql": [
+        "DELETE FROM commands",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Cash In', 'Momo', '*171#;3;1;num;num;amt', 'seq', 'debit', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Cash Out', 'Momo', '*171#;2;1;num;num;amt;!;pin', 'seq', 'credit', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Transfer', 'MoMo', '*171#;1;1;num;num;amt', 'seq', 'debit', 'Cash In made for');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'MoMo', '*171#;7;1;pin', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Com-out', 'Momo', '*171#;7;2;1;pin', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'MoMo', '*171#;7;1;pin', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'MoveComm', 'MoMo', '*171#;7;3;amt;pin', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Statement', 'MoMo', '*171#;7;4;2;pin', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Airtime', 'MoMo', '*171#;5;amt;num;num', 'seq', 'neutral', '');"
+    ],
+    "message": "Sync successful"
+}
