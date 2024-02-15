@@ -2,6 +2,8 @@
     "expiry": "2024-03-31",
     "sql": [
         "DELETE FROM commands",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Validity', 'NHIS', '*929#;1;1;num;num', 'seq', 'neutral', '');",
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Renew', 'NHIS', '*929#;2;1;num;num', 'seq', 'neutral', '');",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Airtime', 'MTN', '*124#', 'seq', 'neutral', '');",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Allow C-out ', 'MTN', '*170#;4;1', 'seq', 'neutral', '');",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'MTN', '*170#;6;1;pin', 'seq', 'neutral', '');",
