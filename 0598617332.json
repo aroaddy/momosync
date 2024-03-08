@@ -10,13 +10,7 @@
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'MoMo', '*171#;7;1;pin', 'seq', 'neutral', '');",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'MoveComm', 'MoMo', '*171#;7;3;amt;pin', 'seq', 'neutral', '');",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Statement', 'MoMo', '*171#;7;4;2;pin', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Airtime', 'MoMo', '*171#;5;amt;num;num', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Bundle', 'EVD', '*1328*4*num#', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Retail', 'EVD', '*1328*3*num*amt*pin#', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Wholesale', 'EVD', '*1328*2*num*amt*pin#', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Balance', 'EVD', '*1328#', 'seq', 'neutral', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Load', 'EVD', '*170#;2;2;6;2;amt;pin;1', 'seq', 'debit', '');",
-        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'One4All', 'Momo', '*161*1#;1;num;amt;pin', 'seq', 'neutral', '');"
+        "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Airtime', 'MoMo', '*171#;5;amt;num;num', 'seq', 'neutral', '');"
     ],
     "message": "Sync successful"
 }
