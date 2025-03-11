@@ -32,6 +32,52 @@
             tele.disableVerticalSwipes()
         })()
     </script>
+
+    <div class="container">
+        <form action="/dinero/API/DashboardAPI.php?action=sign_in" method="POST" id="sign_in" class="form-signin"
+            role="form">
+            <img src="resources/icon-tiny.jpg" class="form" alt="Dinero logo">
+            <h2 class="form-signin-heading">Dinero Control Panel</h2>
+            <hr>
+            <h3 class="form-signin-heading">Log in</h3>
+            <input name="account" type="text" class="form-control" placeholder="account" required autofocus>
+            <br>
+            <input name="pin" id="pin" type="password" class="form-control" placeholder="pin" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">
+                <span class="glyphicon glyphicon-user"></span>
+                Sign in
+            </button>
+            <br>
+            <!-- the result of the search will be rendered inside this div -->
+            <p id="result"></p>
+        </form>
+        <script>
+            $(function () {
+                // Attach a submit handler to the form
+                $("#sign_in").submit(function (event) {
+                    event.preventDefault();
+                    var $form = $(this);
+                    var action = $form.attr("action");
+                    var result = window.location.href.split('/').slice(0, 3).join('/');
+                    //console.log(result + action);
+
+                    var posting = $.post(result + action, $("#sign_in").serialize());
+                    posting.done(function (data) {
+                        var parsed = JSON.parse(data);
+                        $("#pin").on('input', function () {
+                            $("#result").empty()
+                        });
+                        if (parsed.success == "false") {
+                            $("#result").empty().append("<br/><br/><a role='button' class='btn btn-warning'>The pin or account is incorrect</a>");
+                        }
+                        if (parsed.success == "true") {
+                            window.location = result + "/dinero/dashboard.html#/user/" + parsed.name;
+                        }
+                    });
+                });
+            }); // end ready
+        </script>
+    </div> <!-- /container -->
 </body>
 
 </html>
