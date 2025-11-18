@@ -1,5 +1,5 @@
 {
-    "expiry": "2024-12-31",
+    "expiry": "2025-12-31",
     "sql": [
         "DELETE FROM commands",
         "INSERT INTO commands ('Active', 'Name', 'Product', 'USSD', 'Mode', 'Type', 'Identifier') VALUES ('1', 'Validity', 'NHIS', '*929#;1;1;num;num', 'seq', 'neutral', '');",
